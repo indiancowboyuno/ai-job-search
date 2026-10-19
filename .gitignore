@@ -119,3 +119,6 @@ company_research/*.json
 
 # Brainstorm mockups (superpowers visual companion) - never ship
 .superpowers/
+
+# Personal job-search working folder - never commit
+Supplemental Project/
