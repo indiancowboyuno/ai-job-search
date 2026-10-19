@@ -15,6 +15,9 @@ The `site:` query templates in this file are the **WebSearch fallback** — for 
 Primary (your market's job boards - scaffold one with `/add-portal`):
 - **[YOUR_JOB_BOARD]** - your market's largest general job board
 - **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by `linkedin-search` CLI
+- **indeed.com** - Indeed job listings; covered by the `indeed-search` skill, which runs through Indeed's official Claude connector (no CLI; connect it once under Settings -> Connectors)
+- **dice.com** - US/Canada tech and IT roles; covered by the `dice-search` skill (Dice connector, no CLI)
+- **ziprecruiter.com** - US/Canada general listings; covered by the `ziprecruiter-search` skill (connector, search only, 5 results per call)
 - **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
 - **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
 

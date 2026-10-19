@@ -15,6 +15,13 @@ per-file diff commands.
 
 ### Added
 
+- **`indeed-search`, `dice-search` and `ziprecruiter-search` portal skills, connector-based**
+  (`.agents/skills/indeed-search/SKILL.md`, `.agents/skills/dice-search/SKILL.md`,
+  `.agents/skills/ziprecruiter-search/SKILL.md`, `.claude/skills/job-scraper/search-queries.md`, `README.md`) -
+  search Indeed, Dice and ZipRecruiter through their Claude connectors (`search_jobs` and, where offered,
+  `get_job_details`) instead of a CLI, because their public APIs are discontinued or scraping is blocked.
+  Tool schemas were confirmed by live calls on 2026-10-19; each needs a one-time connector sign-in.
+
 - **CI runs the Python suite on Windows** (`.github/workflows/ci.yml` `python-tests-windows`) - every
   job ran on Ubuntu, so a Windows-only failure reached master with all checks green: #480's test
   (an atomic rename that Windows file locking refuses) and #486's (a tool printing non-ASCII JSON

@@ -186,7 +186,10 @@ ai-job-search/
 │   ├── jobindex-search/               # Jobindex.dk (Denmark)
 │   ├── jobnet-search/                 # Jobnet.dk (Denmark, government portal)
 │   ├── linkedin-search/               # LinkedIn public job listings (country-agnostic)
-│   └── freehire-search/               # freehire.me tech job aggregator (multi-market, REST API)
+│   ├── freehire-search/               # freehire.me tech job aggregator (multi-market, REST API)
+│   ├── indeed-search/                 # Indeed via the official Claude connector (no CLI)
+│   ├── dice-search/                   # Dice (US/Canada tech jobs) via its Claude connector (no CLI)
+│   └── ziprecruiter-search/           # ZipRecruiter via its Claude connector (search only, no CLI)
 ├── cv/
 │   └── main_example.tex               # moderncv LaTeX template
 ├── cover_letters/
