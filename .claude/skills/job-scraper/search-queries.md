@@ -18,6 +18,7 @@ Primary (your market's job boards - scaffold one with `/add-portal`):
 - **indeed.com** - Indeed job listings; covered by the `indeed-search` skill, which runs through Indeed's official Claude connector (no CLI; connect it once under Settings -> Connectors)
 - **dice.com** - US/Canada tech and IT roles; covered by the `dice-search` skill (Dice connector, no CLI)
 - **ziprecruiter.com** - US/Canada general listings; covered by the `ziprecruiter-search` skill (connector, search only, 5 results per call)
+- **monster.com** - US general listings; no connector or CLI exists, so use the WebSearch fallback below (`site:monster.com "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_CITY]`), and do not scrape the site
 - **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
 - **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
 
